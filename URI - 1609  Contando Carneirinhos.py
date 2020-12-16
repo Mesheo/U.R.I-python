@@ -8,13 +8,10 @@ for i in range(n):
     numero_de_carneirinhos = int(input())
     #recebe numero de cada carneiro
     carneiros = input().split()
-    #analisa a lista carneiros
-        
-    carneiros_de_vdd = []
-    for carneiro in carneiros:
-            
-        #adiciona o carneiro na lista se ele não se repetir
-        if carneiro not in carneiros_de_vdd:
-            carneiros_de_vdd.append(carneiro)
-            
-    print(len(carneiros_de_vdd)) 
+    
+    #Monto um conjunto (sem repetições)
+    conjunto_carneiros = set(carneiros)
+    
+    #printo o tamanho do conjunto
+    print(len(conjunto_carneiros))
+    
