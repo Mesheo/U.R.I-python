@@ -14,7 +14,7 @@ for plotH in range(L//M):
         plotSum = 0
         for i in range(M):
             for j in range(N):
-                plotSum += plantation[i + plotH][j + plotV]
+                plotSum += plantation[i + (plotH * M)][j + (plotV * N)]
         sums.append(plotSum)
 
 print(max(sums))
